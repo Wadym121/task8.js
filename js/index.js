@@ -2,13 +2,13 @@ const list = document.querySelector('ol');
 const input = document.querySelector('input');
 const button = document.querySelector('button');
 button.onclick = function() {
-    let Item = input.value;
+    let item = input.value;
     input.value = '';
     const listItem = document.createElement('li');
     const listText = document.createElement('span');
     const listBtn = document.createElement('button');
     listItem.appendChild(listText);
-    listText.textContent = Item;
+    listText.textContent = item;
     listItem.appendChild(listBtn);
     listBtn.textContent = 'Delete';
     list.appendChild(listItem);
